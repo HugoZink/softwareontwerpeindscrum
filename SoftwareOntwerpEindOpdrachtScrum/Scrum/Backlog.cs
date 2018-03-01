@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
-	class Backlog
+	public class Backlog
 	{
 		public List<Item> Items { get; set; }
 	}

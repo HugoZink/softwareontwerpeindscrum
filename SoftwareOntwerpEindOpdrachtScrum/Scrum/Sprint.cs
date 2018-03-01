@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
-	abstract class Sprint : ISubject
+	public abstract class Sprint : ISubject
 	{
 		private List<IObserver> _observers;
 
@@ -17,6 +17,11 @@ namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 		public DateTime EndDate { get; set; }
 
 		public bool Review { get; set; }
+
+		public Sprint()
+		{
+			this._observers = new List<IObserver>();
+		}
 
 		public void Attach(IObserver observer)
 		{

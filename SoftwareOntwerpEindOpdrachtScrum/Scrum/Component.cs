@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
-	abstract class Component
+	public abstract class Component
 	{
 		public string Name { get; set; }
 

@@ -9,5 +9,10 @@ namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 	class ProxySprint : Sprint
 	{
 		private RealSprint _realSprint;
+
+		public ProxySprint(RealSprint realSprint) : base()
+		{
+			this._realSprint = realSprint;
+		}
 	}
 }

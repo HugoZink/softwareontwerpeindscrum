@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
-	class Item : Component
+	public class Item : Component
 	{
 		public List<Component> Components { get; set; }
 

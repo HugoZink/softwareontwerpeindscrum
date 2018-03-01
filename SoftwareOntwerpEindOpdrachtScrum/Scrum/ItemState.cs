@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
-	abstract class ItemState
+	public abstract class ItemState
 	{
 		public virtual ItemState Start()
 		{
