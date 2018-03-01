@@ -27,14 +27,9 @@ namespace SoftwareOntwerpEindOpdrachtScrum.Scm
 			this.Commits.Add(commit);
 		}
 
-		public void Pull()
+		public void Sync()
 		{
-			throw new NotImplementedException();
-		}
-
-		public void Push()
-		{
-			throw new NotImplementedException();
+			ScmProviderFactory.Instance.GetProvider().Sync(this);
 		}
 	}
 }
