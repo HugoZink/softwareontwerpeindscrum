@@ -42,11 +42,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DevOps\ActionIterator.cs" />
+    <Compile Include="DevOps\ActionProviderFactory.cs" />
+    <Compile Include="DevOps\Build.cs" />
+    <Compile Include="DevOps\Deploy.cs" />
+    <Compile Include="DevOps\DeploymentListSchedule.cs" />
+    <Compile Include="DevOps\IAction.cs" />
+    <Compile Include="DevOps\IProvider.cs" />
+    <Compile Include="DevOps\IIterator.cs" />
+    <Compile Include="DevOps\Package.cs" />
+    <Compile Include="DevOps\Source.cs" />
+    <Compile Include="DevOps\Test.cs" />
+    <Compile Include="DevOps\Utility.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scm\Branch.cs" />
+    <Compile Include="Scm\Commit.cs" />
+    <Compile Include="Scm\IScmProvider.cs" />
+    <Compile Include="Scm\ScmProviderFactory.cs" />
+    <Compile Include="Scrum\Backlog.cs" />
+    <Compile Include="Scrum\BacklogStateFactory.cs" />
+    <Compile Include="Scrum\BaseReport.cs" />
+    <Compile Include="Scrum\Component.cs" />
+    <Compile Include="Scrum\FooterDecorator.cs" />
+    <Compile Include="Scrum\HeaderDecorator.cs" />
+    <Compile Include="Scrum\HtmlFormat.cs" />
+    <Compile Include="Scrum\ICommand.cs" />
+    <Compile Include="Scrum\IReportsFormat.cs" />
+    <Compile Include="Scrum\Item.cs" />
+    <Compile Include="Scrum\ItemDone.cs" />
+    <Compile Include="Scrum\ItemInProgress.cs" />
+    <Compile Include="Scrum\ItemState.cs" />
+    <Compile Include="Scrum\ItemTodo.cs" />
+    <Compile Include="Scrum\IObserver.cs" />
+    <Compile Include="Scrum\Message.cs" />
+    <Compile Include="Scrum\PDFFormat.cs" />
+    <Compile Include="Scrum\Post.cs" />
+    <Compile Include="Scrum\ProxySprint.cs" />
+    <Compile Include="Scrum\RealSprint.cs" />
+    <Compile Include="Scrum\Report.cs" />
+    <Compile Include="Scrum\ReportDecorator.cs" />
+    <Compile Include="Scrum\ReportFormatFactory.cs" />
+    <Compile Include="Scrum\Sprint.cs" />
+    <Compile Include="Scrum\ISubject.cs" />
+    <Compile Include="Scrum\SprintClosed.cs" />
+    <Compile Include="Scrum\SprintInProgress.cs" />
+    <Compile Include="Scrum\SprintOpen.cs" />
+    <Compile Include="Scrum\SprintState.cs" />
+    <Compile Include="Scrum\SprintStateFactory.cs" />
+    <Compile Include="Scrum\Task.cs" />
+    <Compile Include="Scrum\Thread.cs" />
+    <Compile Include="Scrum\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
