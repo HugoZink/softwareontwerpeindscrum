@@ -56,6 +56,11 @@
     <Compile Include="DevOps\Utility.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\IDevOpsRepository.cs" />
+    <Compile Include="Repository\IBacklogRepository.cs" />
+    <Compile Include="Repository\IScmRepository.cs" />
+    <Compile Include="Repository\ISprintRepository.cs" />
+    <Compile Include="Repository\IUserRepository.cs" />
     <Compile Include="Scm\Branch.cs" />
     <Compile Include="Scm\Commit.cs" />
     <Compile Include="Scm\IScmProvider.cs" />
@@ -67,7 +72,7 @@
     <Compile Include="Scrum\FooterDecorator.cs" />
     <Compile Include="Scrum\HeaderDecorator.cs" />
     <Compile Include="Scrum\HtmlFormat.cs" />
-    <Compile Include="Scrum\ICommand.cs" />
+    <Compile Include="Scrum\IMessageCommand.cs" />
     <Compile Include="Scrum\IReportsFormat.cs" />
     <Compile Include="Scrum\Item.cs" />
     <Compile Include="Scrum\ItemDone.cs" />
@@ -75,7 +80,6 @@
     <Compile Include="Scrum\ItemState.cs" />
     <Compile Include="Scrum\ItemTodo.cs" />
     <Compile Include="Scrum\IObserver.cs" />
-    <Compile Include="Scrum\Message.cs" />
     <Compile Include="Scrum\PDFFormat.cs" />
     <Compile Include="Scrum\Post.cs" />
     <Compile Include="Scrum\ProxySprint.cs" />

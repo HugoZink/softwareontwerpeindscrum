@@ -8,6 +8,6 @@ namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
 	public interface IObserver
 	{
-		void Update();
+		void Update(Sprint sprint);
 	}
 }

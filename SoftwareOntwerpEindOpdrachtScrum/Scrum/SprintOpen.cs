@@ -8,7 +8,7 @@ namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
 	class SprintOpen : SprintState
 	{
-		public bool CanEdit
+		public override bool CanEdit
 		{
 			get
 			{

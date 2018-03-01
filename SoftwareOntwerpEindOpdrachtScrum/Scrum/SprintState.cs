@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
-	abstract class SprintState
+	public abstract class SprintState
 	{
-		public bool CanEdit
+		public virtual bool CanEdit
 		{
 			get
 			{

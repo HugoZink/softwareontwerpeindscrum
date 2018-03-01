@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
-	class Message : ICommand
+	public interface IMessageCommand
 	{
-		public string Text { get; set; }
-
-		public void Execute()
-		{
-
-		}
+		void Execute(string message);
 	}
 }

@@ -8,34 +8,53 @@ namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
 	public abstract class Sprint : ISubject
 	{
-		private List<IObserver> _observers;
+		protected List<IObserver> _observers;
 
-		public string Name { get; set; }
+		public virtual string Name { get; set; }
 
-		public DateTime StartDate { get; set; }
+		public virtual DateTime StartDate { get; set; }
 
-		public DateTime EndDate { get; set; }
+		public virtual DateTime EndDate { get; set; }
 
-		public bool Review { get; set; }
+		public virtual bool Review { get; set; }
+
+		public virtual SprintState State { get; set; }
+
+		public virtual string ReviewSummaryDocument { get; set; }
 
 		public Sprint()
 		{
 			this._observers = new List<IObserver>();
 		}
 
-		public void Attach(IObserver observer)
+		public virtual void Start()
+		{
+			this.State = this.State.Start();
+			this.NotifyObservers();
+		}
+
+		public virtual void Close()
+		{
+			this.State = this.State.Close();
+			this.NotifyObservers();
+		}
+
+		public virtual void Attach(IObserver observer)
 		{
 			this._observers.Add(observer);
 		}
 
-		public void Detach(IObserver observer)
+		public virtual void Detach(IObserver observer)
 		{
 			this._observers.Remove(observer);
 		}
 
-		public void NotifyObservers()
+		public virtual void NotifyObservers()
 		{
-
+			foreach(IObserver observer in this._observers)
+			{
+				observer.Update(this);
+			}
 		}
 	}
 }
