@@ -107,6 +107,11 @@ namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 			this._realSprint = new RealSprint();
 		}
 
+		public ProxySprint(RealSprint sprint)
+		{
+			this._realSprint = sprint;
+		}
+
 		public override void Start()
 		{
 			_realSprint.Start();

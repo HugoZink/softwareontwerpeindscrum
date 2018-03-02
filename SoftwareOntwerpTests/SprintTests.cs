@@ -1,6 +1,7 @@
 ﻿using System;
 using SoftwareOntwerpEindOpdrachtScrum.Scrum;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
 
 namespace SoftwareOntwerpTests
 {
@@ -70,6 +71,22 @@ namespace SoftwareOntwerpTests
 			Assert.ThrowsException<InvalidOperationException>(() => {
 				sprint.Start();
 			});
+		}
+
+		[TestMethod]
+		public void TestObserver()
+		{
+			var realSprint = new RealSprint();
+			Sprint sprint = new ProxySprint(realSprint);
+
+			var mock = new Mock<IObserver>();
+			mock.Setup(o => o.Update(realSprint));
+			
+			sprint.Attach(mock.Object);
+
+			sprint.Start();
+
+			mock.Verify(o => o.Update(realSprint));
 		}
 	}
 }
