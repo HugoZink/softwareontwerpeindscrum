@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="BacklogItemTests.cs" />
     <Compile Include="ReportTests.cs" />
+    <Compile Include="ScmTests.cs" />
     <Compile Include="SprintTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

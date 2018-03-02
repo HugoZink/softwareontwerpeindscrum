@@ -8,6 +8,8 @@ namespace SoftwareOntwerpEindOpdrachtScrum.Scm
 {
 	public interface IScmProvider
 	{
+		void Merge(Branch mainBranch, Branch branchToMerge);
+
 		void Sync(Branch branch);
 	}
 }

@@ -19,7 +19,7 @@ namespace SoftwareOntwerpEindOpdrachtScrum.Scm
 
 		public void Merge(Branch branch)
 		{
-			throw new NotImplementedException();
+			ScmProviderFactory.Instance.GetProvider().Merge(this, branch);
 		}
 
 		public void Commit(Commit commit)
