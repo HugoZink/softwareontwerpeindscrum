@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
-	class RealSprint : Sprint
+	public class RealSprint : Sprint
 	{
 
 	}

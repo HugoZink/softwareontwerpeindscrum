@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
-	class ProxySprint : Sprint
+	public class ProxySprint : Sprint
 	{
 		private RealSprint _realSprint;
 
@@ -82,14 +82,9 @@ namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 			}
 		}
 
-		public ProxySprint() : base()
+		public ProxySprint()
 		{
 			this._realSprint = new RealSprint();
-		}
-
-		public ProxySprint(RealSprint realSprint) : base()
-		{
-			this._realSprint = realSprint;
 		}
 
 		public override void Start()

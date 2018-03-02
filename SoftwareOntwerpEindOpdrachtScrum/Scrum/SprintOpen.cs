@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
-	class SprintOpen : SprintState
+	public class SprintOpen : SprintState
 	{
 		public override bool CanEdit
 		{
