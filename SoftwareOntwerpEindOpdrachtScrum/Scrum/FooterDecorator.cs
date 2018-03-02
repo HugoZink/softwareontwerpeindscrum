@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
-	class FooterDecorator : ReportDecorator
+	public class FooterDecorator : ReportDecorator
 	{
-		public FooterDecorator(BaseReport report) : base(report)
-		{
+		private string _footerText;
 
+		public FooterDecorator(BaseReport report, string footerText) : base(report)
+		{
+			this._footerText = footerText;
 		}
 
 		public override string GetReport()
 		{
-			return this.report.GetReport() + "\r\nFOOTER";
+			return this.report.GetReport() + "\r\n" + _footerText;
 		}
 	}
 }

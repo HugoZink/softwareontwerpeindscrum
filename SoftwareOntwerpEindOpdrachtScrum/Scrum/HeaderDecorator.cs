@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
-	class HeaderDecorator : ReportDecorator
+	public class HeaderDecorator : ReportDecorator
 	{
-		public HeaderDecorator(BaseReport report) : base(report)
-		{
+		private string _headerText;
 
+		public HeaderDecorator(BaseReport report, string headerText) : base(report)
+		{
+			this._headerText = headerText;
 		}
 
 		public override string GetReport()
 		{
-			return "HEADER\r\n" + this.report.GetReport();
+			return _headerText + "\r\n" + this.report.GetReport();
 		}
 	}
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
-	abstract class BaseReport
+	public abstract class BaseReport
 	{
 		abstract public string GetReport();
 

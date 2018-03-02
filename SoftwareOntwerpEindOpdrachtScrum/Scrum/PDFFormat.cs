@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
-	class PDFFormat : IReportsFormat
+	public class PDFFormat : IReportsFormat
 	{
 		public string Generate(BaseReport report)
 		{

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
-	interface IReportsFormat
+	public interface IReportsFormat
 	{
 		string Generate(BaseReport report);
 	}

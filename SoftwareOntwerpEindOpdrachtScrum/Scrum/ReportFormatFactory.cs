@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
-	static class ReportFormatFactory
+	public static class ReportFormatFactory
 	{
 		public static IReportsFormat GetGenerator()
 		{

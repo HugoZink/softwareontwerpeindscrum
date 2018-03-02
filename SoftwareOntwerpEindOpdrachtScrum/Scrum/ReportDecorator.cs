@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
-	abstract class ReportDecorator : BaseReport
+	public abstract class ReportDecorator : BaseReport
 	{
 		protected BaseReport report;
 

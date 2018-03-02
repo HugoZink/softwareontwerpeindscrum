@@ -8,6 +8,9 @@ namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
 	public class RealSprint : Sprint
 	{
-
+		public RealSprint() : base()
+		{
+			this.State = SprintStateFactory.GetInitialState();
+		}
 	}
 }

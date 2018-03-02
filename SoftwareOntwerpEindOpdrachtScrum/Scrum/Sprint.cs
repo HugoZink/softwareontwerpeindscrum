@@ -25,7 +25,6 @@ namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 		public Sprint()
 		{
 			this._observers = new List<IObserver>();
-			this.State = SprintStateFactory.GetInitialState();
 		}
 
 		public virtual void Start()

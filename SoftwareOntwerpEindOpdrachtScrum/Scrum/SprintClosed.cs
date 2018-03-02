@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
-	class SprintClosed : SprintState
+	public class SprintClosed : SprintState
 	{
 
 	}

@@ -18,6 +18,11 @@ namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 			}
 			set
 			{
+				if(!_realSprint.State.CanEdit)
+				{
+					throw new InvalidOperationException("Sprints cannot be edited once started!");
+				}
+
 				_realSprint.Name = value;
 			}
 		}
@@ -30,6 +35,11 @@ namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 			}
 			set
 			{
+				if (!_realSprint.State.CanEdit)
+				{
+					throw new InvalidOperationException("Sprints cannot be edited once started!");
+				}
+
 				_realSprint.StartDate = value;
 			}
 		}
@@ -42,6 +52,11 @@ namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 			}
 			set
 			{
+				if (!_realSprint.State.CanEdit)
+				{
+					throw new InvalidOperationException("Sprints cannot be edited once started!");
+				}
+
 				_realSprint.EndDate = value;
 			}
 		}
@@ -54,6 +69,11 @@ namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 			}
 			set
 			{
+				if (!_realSprint.State.CanEdit)
+				{
+					throw new InvalidOperationException("Sprints cannot be edited once started!");
+				}
+
 				_realSprint.Review = value;
 			}
 		}

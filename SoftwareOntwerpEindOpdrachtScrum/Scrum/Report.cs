@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
-	class Report : BaseReport
+	public class Report : BaseReport
 	{
 		private string reportText;
 
