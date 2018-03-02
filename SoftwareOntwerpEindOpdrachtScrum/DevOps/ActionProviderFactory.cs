@@ -11,11 +11,11 @@ namespace SoftwareOntwerpEindOpdrachtScrum.DevOps
 	{
 		private static ActionProviderFactory instance;
 
-		private ServiceContainer _providers;
+		private Dictionary<Type, IProvider> _providers;
 
 		private ActionProviderFactory()
 		{
-			this._providers = new ServiceContainer();
+			this._providers = new Dictionary<Type, IProvider>();
 		}
 
 		public static ActionProviderFactory Instance
@@ -31,14 +31,14 @@ namespace SoftwareOntwerpEindOpdrachtScrum.DevOps
 			}
 		}
 
-		public IProvider GetProvider(IAction action)
+		public IProvider GetProvider<T>() where T: IAction
 		{
-			return this._providers.GetService(action.GetType()) as IProvider;
+			return this._providers[typeof(T)];
 		}
 
 		public void RegisterProvider<T>(IProvider provider) where T : IAction
 		{
-			this._providers.AddService(typeof(T), provider);
+			this._providers.Add(typeof(T), provider);
 		}
 	}
 }

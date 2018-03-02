@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.DevOps
 {
-	class Package : IAction
+	public class Package : IAction
 	{
 		public void Execute(Branch branch)
 		{
-			ActionProviderFactory.Instance.GetProvider(this).Execute(branch);
+			ActionProviderFactory.Instance.GetProvider<Package>().Execute(branch);
 		}
 
 		public string GetResults()
