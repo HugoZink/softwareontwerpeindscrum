@@ -29,19 +29,19 @@ namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 			this.State = state;
 		}
 
-		public void Start()
+		public virtual void Start()
 		{
-
+			this.State = this.State.Start();
 		}
 
-		public void Complete()
+		public virtual void Complete()
 		{
-
+			this.State = this.State.Complete();
 		}
 
-		public void Revert()
+		public virtual void Revert()
 		{
-
+			this.State = this.State.Revert();
 		}
 	}
 }

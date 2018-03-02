@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
-	class ItemInProgress : ItemState
+	public class ItemInProgress : ItemState
 	{
 		public override ItemState Complete()
 		{

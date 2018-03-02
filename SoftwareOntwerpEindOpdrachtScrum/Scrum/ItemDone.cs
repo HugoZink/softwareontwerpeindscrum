@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
-	class ItemDone : ItemState
+	public class ItemDone : ItemState
 	{
 		public override ItemState Revert()
 		{

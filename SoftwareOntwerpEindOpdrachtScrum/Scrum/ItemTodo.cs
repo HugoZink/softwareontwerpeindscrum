@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareOntwerpEindOpdrachtScrum.Scrum
 {
-	class ItemTodo : ItemState
+	public class ItemTodo : ItemState
 	{
 		public override ItemState Start()
 		{
